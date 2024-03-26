@@ -1,3 +1,19 @@
 .body{
-    background-color: red;
+    background-color: rgb(221, 248, 221);
+}
+
+.title{
+        font-family: "Luckiest Guy", cursive;
+        font-style: normal;     
+}
+
+.instructions{
+    color:rgb(221, 248, 221);
+    background-color: rgb(108, 210, 108);
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+}
+
+.center{
+    text-align: center;
 }
