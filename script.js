@@ -2,6 +2,7 @@ const nameArray = [] //Create a list to store names
 
 function addName() {
   //get a trimmed version of the name from the input box
+  //where names get input and if nothing is written it comes out blank
   const nameInput = document.getElementById('nameInput')
   const name = nameInput.value.trim()
   nameArray.push(name)
@@ -9,6 +10,7 @@ function addName() {
   nameInput.value = ''
 
 }
+//allows you to keep adding names and stores them into a list  
 function displayNames() {
   const nameList = document.getElementById('nameList')//get UL element 
   nameList.innerHTML = '' //clears the list 
@@ -29,7 +31,7 @@ function displayNames() {
 
 }
 
-
+//assigns each name a number and picks one of the random numbers and a name with that number gets displayed
 function pickRandomName(){
   const randomNameDiv = document.getElementById('randomName')
   randomNameDiv.textContent = ''
@@ -42,6 +44,7 @@ function pickRandomName(){
  
 }
 
+//assigns each name a number and random number is chosen and name with that number gets displayed but after each one it deletes the name that it chooses
 function deleteName(){
   const randomNameDiv = document.getElementById('randomName')
   randomNameDiv.textContent = ''
@@ -63,8 +66,10 @@ function deleteName(){
 
 
 // add onclick to add name btn
+//button that adds the name
 document.getElementById('addNameBtn').addEventListener('click', addName)
 
+//buttons that generate name
 document.getElementById('pickRandomBtn').addEventListener('click', pickRandomName)
 
 document.getElementById('deleteName').addEventListener('click', deleteName)
