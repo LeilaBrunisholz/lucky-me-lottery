@@ -38,7 +38,7 @@ function pickRandomName(){
   const randomNumber = Math.floor(Math.random() * nameArray.length)
   const randomName = nameArray[randomNumber]
 
-  randomNameDiv.textContent = `Congrats ${randomName}`
+  randomNameDiv.textContent = `Congrats ${randomName} you were chosen!`
  
 }
 
@@ -49,7 +49,7 @@ function deleteName(){
   const randomNumber = Math.floor(Math.random() * nameArray.length)
   const randomName = nameArray[randomNumber]
 
-  randomNameDiv.textContent = `Congrats ${randomName}`
+  randomNameDiv.textContent = `Congrats <u>${randomName}</u>, you were chosen!`
   nameArray.splice(randomNumber, 1)
   displayNames()
 }
