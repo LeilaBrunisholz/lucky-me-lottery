@@ -49,10 +49,14 @@ function deleteName(){
   const randomNumber = Math.floor(Math.random() * nameArray.length)
   const randomName = nameArray[randomNumber]
 
-  randomNameDiv.textContent = `Congrats <u>${randomName}</u>, you were chosen!`
+  // Wrap the randomName with a span and assign a class to it
+  randomNameDiv.innerHTML = `Congrats <span class="color">${randomName}</span>, you were chosen!`
+
+  // Remove the selected name from the array
   nameArray.splice(randomNumber, 1)
   displayNames()
 }
+
 
 
 
