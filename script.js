@@ -7,6 +7,7 @@ function addName() {
   nameArray.push(name)
   displayNames()
   nameInput.value = ''
+
 }
 function displayNames() {
   const nameList = document.getElementById('nameList')//get UL element 
@@ -33,6 +34,7 @@ function pickRandomName(){
   const randomNameDiv = document.getElementById('randomName')
   randomNameDiv.textContent = ''
 
+
   const randomNumber = Math.floor(Math.random() * nameArray.length)
   const randomName = nameArray[randomNumber]
 
@@ -47,10 +49,11 @@ function deleteName(){
   const randomNumber = Math.floor(Math.random() * nameArray.length)
   const randomName = nameArray[randomNumber]
 
-  randomNameDiv.textContent = randomName
+  randomNameDiv.textContent = `Congrats ${randomName}`
   nameArray.splice(randomNumber, 1)
   displayNames()
 }
+
 
 
 
