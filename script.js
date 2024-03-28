@@ -38,7 +38,7 @@ function pickRandomName(){
   const randomNumber = Math.floor(Math.random() * nameArray.length)
   const randomName = nameArray[randomNumber]
 
-  randomNameDiv.textContent = randomName
+  randomNameDiv.textContent = `Congrats ${randomName}`
  
 }
 
