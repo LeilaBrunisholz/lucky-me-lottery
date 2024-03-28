@@ -22,4 +22,6 @@
 
 .color {
     color: red; 
-  }
+     font-family: "Tauri", sans-serif;
+font-size: larger;
+    }
